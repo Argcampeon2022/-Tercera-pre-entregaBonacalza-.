@@ -1,0 +1,11 @@
+<p> Estamos buscando el: {{Marca}} </p>
+{% if AutoDeportivo %}
+<ul>
+{% for autodeportivo in AutoDeportivo %}
+   <li> {{AutoDeportivo.Marca}} </li>
+   <li> {{AutoDeportivo.Modelo}} </li>
+   <li> {{AutoDeportivo.Color}} </li>
+   <li> {{AutoDeportivo.Puertas}} </li>
+{% endfor %}
+</ul>
+{% endif %}
